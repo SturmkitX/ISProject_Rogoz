@@ -5,7 +5,9 @@ import javafx.beans.property.StringProperty;
 import javafx.scene.control.CheckBox;
 import javafx.scene.image.Image;
 
-public class ArticleDTO {
+import java.io.Serializable;
+
+public class ArticleDTO implements Serializable {
 
     private StringProperty source;
     private StringProperty title;

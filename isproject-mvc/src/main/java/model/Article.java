@@ -1,6 +1,8 @@
 package model;
 
-public class Article {
+import java.io.Serializable;
+
+public class Article implements Serializable {
 
     private String source;
     private String title;

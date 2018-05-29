@@ -36,6 +36,7 @@ public class MainController implements Initializable {
 
     private WebhoseIOClient webhoseClient;
     private ObservableList<ArticleDTO> articles;
+    private int queryPage = 1;
 
     @FXML // fx:id="searchField"
     private TextField searchField; // Value injected by FXMLLoader
@@ -75,7 +76,9 @@ public class MainController implements Initializable {
 
     @FXML
     void deselectBoxes(ActionEvent event) {
-
+        for(ArticleDTO dto : articles) {
+            dto.getChecked().setSelected(false);
+        }
     }
 
     @FXML
@@ -93,6 +96,9 @@ public class MainController implements Initializable {
         Map<String, String> queries = new HashMap<String, String>();
         queries.put("q", searchField.getText());
         queries.put("size", "10");
+        queries.put("sort", "relevancy");
+        queries.put("from", "" + queryPage);
+        queries.put("language", "english");
         try {
             articles.clear();
             articles.addAll(getArticleDTOs(ResultArticles.getArticles(webhoseClient.query("filterWebContent", queries))));
@@ -105,12 +111,19 @@ public class MainController implements Initializable {
 
     @FXML
     void selectBoxes(ActionEvent event) {
-
+        for(ArticleDTO dto : articles) {
+            dto.getChecked().setSelected(true);
+        }
     }
 
     @FXML
     void addToDatabase(ActionEvent event) {
-
+        for(ArticleDTO dto : articles) {
+            if(dto.getChecked().isSelected()) {
+                UserSession.addStarred(dto);
+            }
+        }
+        UserSession.saveStarred();
     }
 
     @Override
