@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <TextField fx:id="searchField" layoutX="23.0" layoutY="14.0" promptText="Search Criteria" />
+      <Button fx:id="searchBtn" layoutX="238.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchArticles" text="Search" />
+      <Button fx:id="prevPage" layoutX="58.0" layoutY="64.0" mnemonicParsing="false" onAction="#decrementPage" text="Previous page" />
+      <Button fx:id="nextPage" layoutX="176.0" layoutY="64.0" mnemonicParsing="false" onAction="#incrementPage" text="Next page" />
+      <TableView fx:id="articleTable" layoutX="14.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="articleCol" prefWidth="324.0" text="Article" />
+          <TableColumn fx:id="sentimentCol" prefWidth="107.0" text="Sentiment" />
+            <TableColumn fx:id="timeCol" prefWidth="105.0" text="Time" />
+            <TableColumn fx:id="addDBCol" prefWidth="60.0" text="Check" />
+        </columns>
+      </TableView>
+      <Button fx:id="addDatabaseBtn" layoutX="461.0" layoutY="157.0" mnemonicParsing="false" onAction="#addToDatabase" text="Add to database" />
+      <Button fx:id="selectBtn" layoutX="344.0" layoutY="157.0" mnemonicParsing="false" onAction="#selectBoxes" text="Select All" />
+      <Button fx:id="deselectBtn" layoutX="222.0" layoutY="157.0" mnemonicParsing="false" onAction="#deselectBoxes" text="Deselect All" />
+   </children>
+</AnchorPane>
