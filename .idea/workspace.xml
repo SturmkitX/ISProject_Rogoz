@@ -8,7 +8,8 @@
       <change beforePath="$PROJECT_DIR$/isproject-mvc/src/main/java/model/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/isproject-mvc/src/main/java/model/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isproject-mvc/src/main/java/model/ArticleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/isproject-mvc/src/main/java/model/ArticleDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isproject-mvc/src/main/java/utils/UserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/isproject-mvc/src/main/java/utils/UserSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isproject-nlp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/isproject-nlp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isproject-mvc/src/main/java/xmls/article.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/isproject-mvc/src/main/java/xmls/article.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,13 +22,54 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ISProject$ProjectPipeline.ic" NAME="ProjectPipeline Coverage Results" MODIFIED="1527682203250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>project.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1450">
-              <caret line="130" column="21" lean-forward="true" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
+            <state relative-caret-position="515">
+              <caret line="198" column="31" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2775#2791#0" expanded="true" />
+                <element signature="e#2806#2822#0" expanded="true" />
+                <element signature="e#3470#3486#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/ArticleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="717">
+              <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectPipeline.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="45" column="45" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="45" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterestArticleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/InterestArticleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,14 +80,12 @@
       <file leaf-file-name="UserSession.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/utils/UserSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+            <state relative-caret-position="409">
+              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#1728#1729#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,11 +95,9 @@
         <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/xmls/Starter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +106,8 @@
       <file leaf-file-name="ResultArticles.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+            <state relative-caret-position="629">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,11 +118,21 @@
       <file leaf-file-name="Article.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/Article.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="464">
+              <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
               <folding>
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1779#1780#0" expanded="true" />
+                <element signature="e#1812#1813#0" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+                <element signature="e#1906#1907#0" expanded="true" />
+                <element signature="e#2022#2023#0" expanded="true" />
+                <element signature="e#2055#2056#0" expanded="true" />
+                <element signature="e#2111#2112#0" expanded="true" />
+                <element signature="e#2155#2156#0" expanded="true" />
+                <element signature="e#2244#2245#0" expanded="true" />
+                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="e#2324#2325#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,13 +141,18 @@
       <file leaf-file-name="ArticleDTO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ArticleDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            <state relative-caret-position="379">
+              <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
               <folding>
-                <element signature="e#2681#2682#0" expanded="true" />
-                <element signature="e#2709#2710#0" expanded="true" />
-                <element signature="e#2750#2751#0" expanded="true" />
-                <element signature="e#2784#2785#0" expanded="true" />
+                <element signature="e#3838#3839#0" expanded="true" />
+                <element signature="e#3874#3875#0" expanded="true" />
+                <element signature="e#4047#4048#0" expanded="true" />
+                <element signature="e#4092#4093#0" expanded="true" />
+                <element signature="e#4120#4121#0" expanded="true" />
+                <element signature="e#4162#4163#0" expanded="true" />
+                <element signature="e#4199#4200#0" expanded="true" />
+                <element signature="e#3774#3775#0" expanded="true" />
+                <element signature="e#3802#3803#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,7 +161,7 @@
       <file leaf-file-name="ProjectPipeline2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="527">
               <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -139,15 +192,17 @@
         <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/xmls/article.fxml" />
         <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/webhoseio/WebhoseIOClient.java" />
         <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticleThread.java" />
-        <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticles.java" />
         <option value="$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline2.java" />
         <option value="$PROJECT_DIR$/isproject-nlp/pom.xml" />
-        <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/controller/ArticleController.java" />
         <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/xmls/Starter.java" />
+        <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/controller/InterestArticleController.java" />
+        <option value="$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline.java" />
         <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/model/Article.java" />
         <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/model/ArticleDTO.java" />
-        <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/utils/UserSession.java" />
+        <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticles.java" />
         <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/utils/UserSession.java" />
+        <option value="$PROJECT_DIR$/isproject-mvc/src/main/java/controller/ArticleController.java" />
       </list>
     </option>
   </component>
@@ -163,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -283,6 +339,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISProject-Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="isproject-nlp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,7 +359,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -326,7 +390,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Starter">
+    <configuration name="ProjectPipeline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project.ProjectPipeline" />
+      <module name="nlp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xmls.Starter" />
       <module name="mvc" />
@@ -380,9 +455,14 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.Starter" />
+      <item itemvalue="Application.ProjectPipeline" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Starter" />
+        <item itemvalue="Application.ProjectPipeline" />
       </list>
     </recent_temporary>
   </component>
@@ -413,10 +493,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -435,16 +516,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/ArticleController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -486,6 +557,9 @@
           <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2775#2791#0" expanded="true" />
+            <element signature="e#2806#2822#0" expanded="true" />
+            <element signature="e#3470#3486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -531,6 +605,9 @@
           <caret line="140" column="19" selection-start-line="140" selection-start-column="19" selection-end-line="140" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2775#2791#0" expanded="true" />
+            <element signature="e#2806#2822#0" expanded="true" />
+            <element signature="e#3470#3486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -590,6 +667,9 @@
           <caret line="134" column="121" selection-start-line="134" selection-start-column="121" selection-end-line="134" selection-end-column="121" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2775#2791#0" expanded="true" />
+            <element signature="e#2806#2822#0" expanded="true" />
+            <element signature="e#3470#3486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -649,6 +729,9 @@
           <caret line="134" column="121" selection-start-line="134" selection-start-column="121" selection-end-line="134" selection-end-column="121" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2775#2791#0" expanded="true" />
+            <element signature="e#2806#2822#0" expanded="true" />
+            <element signature="e#3470#3486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -694,38 +777,18 @@
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2775#2791#0" expanded="true" />
+            <element signature="e#2806#2822#0" expanded="true" />
+            <element signature="e#3470#3486#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller.java" />
-    <entry file="file://$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-nlp/src/main/java/parser/ui/TreeJPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticleThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticleThread.java" />
     <entry file="file://$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="527">
           <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -742,59 +805,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/ArticleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-318">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ArticleDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="e#2681#2682#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
-            <element signature="e#2750#2751#0" expanded="true" />
-            <element signature="e#2784#2785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/xmls/Starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/webhoseio/WebhoseIOClient.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -813,24 +823,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/utils/UserSession.java">
+    <entry file="file://$PROJECT_DIR$/isproject-nlp/src/main/java/parser/ui/TreeJPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        <state relative-caret-position="629">
+          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#1779#1780#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1906#1907#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#2055#2056#0" expanded="true" />
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#2324#2325#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ArticleDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+          <folding>
+            <element signature="e#3838#3839#0" expanded="true" />
+            <element signature="e#3874#3875#0" expanded="true" />
+            <element signature="e#4047#4048#0" expanded="true" />
+            <element signature="e#4092#4093#0" expanded="true" />
+            <element signature="e#4120#4121#0" expanded="true" />
+            <element signature="e#4162#4163#0" expanded="true" />
+            <element signature="e#4199#4200#0" expanded="true" />
+            <element signature="e#3774#3775#0" expanded="true" />
+            <element signature="e#3802#3803#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/xmls/Starter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/model/ResultArticles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/InterestArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-nlp/src/main/java/project/ProjectPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="45" column="45" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="45" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="130" column="21" lean-forward="true" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
+        <state relative-caret-position="515">
+          <caret line="198" column="31" selection-start-line="198" selection-start-column="31" selection-end-line="198" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2775#2791#0" expanded="true" />
+            <element signature="e#2806#2822#0" expanded="true" />
+            <element signature="e#3470#3486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/utils/UserSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1728#1729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isproject-mvc/src/main/java/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

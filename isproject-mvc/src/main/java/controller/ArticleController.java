@@ -42,6 +42,9 @@ public class ArticleController implements Initializable {
     @FXML // fx:id="articleDescription"
     private TextArea articleDescription; // Value injected by FXMLLoader
 
+    @FXML
+    private TextArea quoteView;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         articleTitle.textProperty().bind(article.titleProperty());
@@ -53,5 +56,8 @@ public class ArticleController implements Initializable {
         articleNarTime.textProperty().bind(article.narTimeProperty());
         articleImage.imageProperty().set(article.getImage());
         articleDescription.textProperty().bind(article.descriptionProperty());
+        quoteView.textProperty().bind(article.quoteProperty());
+
+        article.getSourceArticle().getTreeJPanel().draw();
     }
 }

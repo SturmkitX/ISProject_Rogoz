@@ -1,6 +1,9 @@
 package model;
 
+import parser.ui.TreeJPanel;
+
 import java.io.Serializable;
+import java.util.Date;
 
 public class Article implements Serializable {
 
@@ -12,6 +15,9 @@ public class Article implements Serializable {
     private String publishedAt;
     private String sentiment;
     private String narTime;
+    private Date latestDate;
+    private transient TreeJPanel treeJPanel;
+    private String quotes;
 
     public String getTitle() {
         return title;
@@ -83,5 +89,29 @@ public class Article implements Serializable {
 
     public void setPublishedAt(String publishedAt) {
         this.publishedAt = publishedAt;
+    }
+
+    public Date getLatestDate() {
+        return latestDate;
+    }
+
+    public void setLatestDate(Date latestDate) {
+        this.latestDate = latestDate;
+    }
+
+    public TreeJPanel getTreeJPanel() {
+        return treeJPanel;
+    }
+
+    public void setTreeJPanel(TreeJPanel treeJPanel) {
+        this.treeJPanel = treeJPanel;
+    }
+
+    public String getQuotes() {
+        return quotes;
+    }
+
+    public void setQuotes(String quotes) {
+        this.quotes = quotes;
     }
 }

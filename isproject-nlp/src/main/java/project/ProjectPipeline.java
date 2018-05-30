@@ -12,7 +12,8 @@ public class ProjectPipeline {
 
     private static String text = "The first day of spring saw the fourth nor’easter storm " +
             "in three weeks swirl its way up a weather-weary US east coast on Wednesday, " +
-            "dumping more than a foot of snow from Virginia to New England and causing widespread disruption.";
+            "dumping more than a foot of snow from Virginia to New England and causing widespread disruption. " +
+            "He said \"I won't be coming home\".";
 
     public static void main(String[] args) {
         Properties props = new Properties();
@@ -38,7 +39,7 @@ public class ProjectPipeline {
             System.out.println("Sentiment tree: ");
             System.out.println(sentence.sentimentTree());
             System.out.println("Quotes");
-            System.out.println(sentence);
+            System.out.println(document.quotes());
 
             TreeJPanel panel = new TreeJPanel();
             panel.setTree(sentence.sentimentTree());

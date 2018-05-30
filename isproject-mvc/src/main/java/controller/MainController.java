@@ -3,6 +3,7 @@ package controller;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.CoreDocument;
 import edu.stanford.nlp.pipeline.CoreEntityMention;
+import edu.stanford.nlp.pipeline.CoreQuote;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -14,15 +15,19 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import model.Article;
 import model.ArticleDTO;
 import model.ResultArticles;
+import parser.ui.TreeJPanel;
 import project.ProjectPipeline2;
 import utils.UserSession;
 import webhoseio.WebhoseIOClient;
 
+import java.awt.*;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -30,6 +35,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.List;
 import java.util.regex.Pattern;
 
 public class MainController implements Initializable {
@@ -83,12 +89,40 @@ public class MainController implements Initializable {
 
     @FXML
     void decrementPage(ActionEvent event) {
-
+        queryPage = Math.min(queryPage - 1, 1);
+        Map<String, String> queries = new HashMap<String, String>();
+        queries.put("q", searchField.getText());
+        queries.put("size", "10");
+        queries.put("sort", "relevancy");
+        queries.put("from", "" + queryPage);
+        queries.put("language", "english");
+        try {
+            articles.clear();
+            articles.addAll(getArticleDTOs(ResultArticles.getArticles(webhoseClient.query("filterWebContent", queries))));
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void incrementPage(ActionEvent event) {
-
+        queryPage++;
+        Map<String, String> queries = new HashMap<String, String>();
+        queries.put("q", searchField.getText());
+        queries.put("size", "10");
+        queries.put("sort", "relevancy");
+        queries.put("from", "" + queryPage);
+        queries.put("language", "english");
+        try {
+            articles.clear();
+            articles.addAll(getArticleDTOs(ResultArticles.getArticles(webhoseClient.query("filterWebContent", queries))));
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -130,6 +164,7 @@ public class MainController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         webhoseClient = WebhoseIOClient.getInstance("fc49e41e-9b11-4b03-9a93-653839a9df4d");
         articles = FXCollections.observableArrayList();
+        UserSession.loadStarred();
 
         articleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
         sentimentCol.setCellValueFactory(new PropertyValueFactory<>("sentiment"));
@@ -156,6 +191,30 @@ public class MainController implements Initializable {
                 }
             }
         });
+
+        // see if there are any articles of interest referring to the near future
+        Date rightNow = new Date(System.currentTimeMillis());
+        for(ArticleDTO dto : UserSession.getNearFuture()) {
+            long timeDiff = dto.getSourceArticle().getLatestDate().getTime() - rightNow.getTime();
+            if(timeDiff > 0 && timeDiff < 86400000L) {
+                // if there is less than 1 day before the referenced date
+                UserSession.getNearFuture().add(dto);
+            }
+        }
+
+        if(UserSession.getNearFuture().size() > 0) {
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("../xmls/interest.fxml"));
+                Stage stage = new Stage();
+                Scene scene = new Scene(root);
+
+                stage.setScene(scene);
+                stage.setTitle("Article");
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private ObservableList<ArticleDTO> getArticleDTOs(List<Article> articles) {
@@ -163,6 +222,17 @@ public class MainController implements Initializable {
         for(Article a : articles) {
             CoreDocument doc = ProjectPipeline2.annotateText(a.getDescription());
             a.setSentiment(doc.sentences().get(0).sentiment());
+
+            TreeJPanel treeJPanel = new TreeJPanel();
+            treeJPanel.setTree(doc.sentences().get(0).sentimentTree());
+            treeJPanel.setBackground(Color.WHITE);
+            a.setTreeJPanel(treeJPanel);
+
+            String quotes = "";
+            for(CoreQuote q : doc.quotes()) {
+                quotes = quotes + q.toString() + "\n";
+            }
+            a.setQuotes(quotes);
 
             // get the latest date
             long sysMillis = System.currentTimeMillis();
@@ -233,6 +303,7 @@ public class MainController implements Initializable {
             } else {
                 a.setNarTime("Present");
             }
+            a.setLatestDate(mostRecent);
 
             System.out.println(new SimpleDateFormat("dd-MM-yyyy").format(mostRecent));
             results.add(new ArticleDTO(a));

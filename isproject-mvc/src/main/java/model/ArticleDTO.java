@@ -19,9 +19,12 @@ public class ArticleDTO implements Serializable {
     private StringProperty sentiment;
     private StringProperty narTime;
     private CheckBox checked;
+    private Article sourceArticle;
+    private StringProperty quote;
 
     public ArticleDTO(Article src) {
         System.out.println("Image URL: " + src.getSource() + " " + src.getUrlToImage());
+        this.sourceArticle = src;
         this.source = new SimpleStringProperty(src.getSource());
         this.author = new SimpleStringProperty(src.getAuthor());
         this.description = new SimpleStringProperty(src.getDescription());
@@ -39,6 +42,8 @@ public class ArticleDTO implements Serializable {
 
         this.checked = new CheckBox();
         this.checked.selectedProperty().setValue(true);
+
+        this.quote = new SimpleStringProperty(src.getQuotes());
     }
 
     public String getSource() {
@@ -151,5 +156,26 @@ public class ArticleDTO implements Serializable {
 
     public void setChecked(CheckBox checked) {
         this.checked = checked;
+    }
+
+    public Article getSourceArticle() {
+        return sourceArticle;
+    }
+
+    public String getQuote() {
+        return quote.get();
+    }
+
+    public StringProperty quoteProperty() {
+        return quote;
+    }
+
+    public void setQuote(String quote) {
+        this.quote.set(quote);
+    }
+
+    @Override
+    public String toString() {
+        return title.get();
     }
 }
